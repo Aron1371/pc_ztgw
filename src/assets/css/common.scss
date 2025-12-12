@@ -1,25 +1,5 @@
 @use "./mixin.scss" as *;
 
-@font-face {
-  font-family: "DIN-Light";
-  src: url("../fonts/DIN-Light.otf");
-}
-@font-face {
-  font-family: "DIN-Bold";
-  src: url("../fonts/DIN-Bold.otf");
-}
-@font-face {
-  font-family: "EuclidCircularA-Bold";
-  src: url("../fonts/EuclidCircularA-Bold.ttf");
-}
-@font-face {
-  font-family: "EuclidCircularA-Regular";
-  src: url("../fonts/EuclidCircularA-Regular.ttf");
-}
-@font-face {
-  font-family: "EuclidCircularA-Light";
-  src: url("../fonts/EuclidCircularA-Light.ttf");
-}
 $color: #e47e30;
 
 @keyframes o-upfade-top {
@@ -280,16 +260,6 @@ $color: #e47e30;
           background-image: url("../images/icon-2-1.png");
         }
       }
-      &.phone {
-        &:before {
-          background-image: url("../images/icon-3-1.png");
-        }
-      }
-      &.search {
-        &:before {
-          background-image: url("../images/icon-4-1.png");
-        }
-      }
       &.lang {
         &:before {
           background-image: url("../images/icon-5-1.png");
@@ -451,16 +421,6 @@ $color: #e47e30;
             background-image: url("../images/icon-2-2.png");
           }
         }
-        &.phone {
-          &:before {
-            background-image: url("../images/icon-3-2.png");
-          }
-        }
-        &.search {
-          &:before {
-            background-image: url("../images/icon-4-2.png");
-          }
-        }
         &.lang {
           &:before {
             background-image: url("../images/icon-5-2.png");
@@ -491,7 +451,6 @@ $color: #e47e30;
     width: 40px;
     height: 40px;
     @include backcontain;
-    background-image: url("../images/close-2.png");
     position: absolute;
     top: 3.125vw;
     right: 3.125vw;
@@ -545,7 +504,6 @@ $color: #e47e30;
   background-color: #2f3e51;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-image: url("../images/img-1.png");
   z-index: 2;
   &:before {
     content: "";
@@ -773,15 +731,6 @@ $color: #e47e30;
       border-radius: 50%;
       @include backimg;
       transition: all 0.3s ease;
-      &.weixin {
-        background-image: url("../images/share-1.png");
-      }
-      &.tsina {
-        background-image: url("../images/share-2.png");
-      }
-      &.sqq {
-        background-image: url("../images/share-3.png");
-      }
     }
   }
 }
@@ -795,7 +744,6 @@ $color: #e47e30;
     width: 18px;
     height: 18px;
     @include backcontain;
-    background-image: url("../images/close-1.png");
     position: absolute;
     right: 0;
     top: -20px;
@@ -941,11 +889,6 @@ $color: #e47e30;
         &.sina,
         &.phone {
           display: none;
-        }
-        &.search {
-          &:before {
-            background-image: url("../images/icon-4-2.png");
-          }
         }
         &.lang {
           &:before {

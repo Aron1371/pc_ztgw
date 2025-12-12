@@ -157,7 +157,7 @@ img {
 }
 
 .clearfix {
-    *zoom: 1;
+    zoom: 1;
 }
 
 .cell-box {

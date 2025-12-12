@@ -507,352 +507,6 @@
         </div>
       </div>
     </div>
-    <div class="index-s4">
-      <div class="top-block">
-        <div class="index-tit gray">
-          <h3>新闻与公告</h3>
-        </div>
-        <div class="tab-tit">
-          <span class="active" data-url="/tongzhi.html" @click="switchTab(0)"
-            >通知公告</span
-          >
-          <span @click="switchTab(1)">公司动态</span>
-        </div>
-        <a href="#/news" class="more">更多新闻</a>
-      </div>
-      <div class="mid-block">
-        <div :class="['child', { active: activeTab === 0 }]">
-          <div ref="swiperContainer1" class="items swiper-container">
-            <div class="swiper-wrapper">
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    关于增加浮动定价指数及调整相关公式的公告
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    关于发布北铁指数的公告
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    关于暂停发布人民币62%基准价的公告
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    关于更正麦克粉成交价格的公告
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    关于调整交易标的的公告
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    关于暂停发布曹妃甸指数的公告
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    关于会员信息变更的公告
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    关于会员信息变更的公告
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-            </div>
-            <span
-              class="swiper-notification"
-              aria-live="assertive"
-              aria-atomic="true"
-            ></span>
-          </div>
-          <div
-            class="pagination swiper-pagination-clickable swiper-pagination-bullets"
-          >
-            <span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 1"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 2"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 3"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 4"
-            ></span
-            ><span
-              class="default active"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 5"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 6"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 7"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 8"
-            ></span>
-          </div>
-        </div>
-        <div :class="['child', { active: activeTab === 1 }]">
-          <div ref="swiperContainer2" class="items swiper-container">
-            <div class="swiper-wrapper">
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    重钢首次通过北铁中心完成混矿招标
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    北铁指数应用备忘录签署！产业协同迈入新阶段
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    北铁中心拜访日韩地区行业企业
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    浦项国际（北京）到访北京铁矿石交易中心
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    北京铁矿石交易中心发布铁矿石港口现货价格指数
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    中物联大宗商品流通分会调研组到访北铁中心
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    建龙集团副总裁赵忻一行到访北铁中心
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    北铁中心召开年度股东大会暨董事会会议
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    鞍钢集团国际经济贸易有限公司总经理张永帅一行到访北铁中心
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-              <div class="item swiper-slide">
-                <a>
-                  <h3 data-swiper-parallax="-100%" class="h3">
-                    北铁中心拜访厦门地区行业企业
-                  </h3>
-                  <span data-swiper-parallax="-100%">了解详情</span>
-                </a>
-              </div>
-            </div>
-            <span
-              class="swiper-notification"
-              aria-live="assertive"
-              aria-atomic="true"
-            ></span>
-          </div>
-          <div
-            class="pagination swiper-pagination-clickable swiper-pagination-bullets"
-          >
-            <span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 1"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 2"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 3"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 4"
-            ></span
-            ><span
-              class="default active"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 5"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 6"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 7"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 8"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 9"
-            ></span
-            ><span
-              class="default"
-              tabindex="0"
-              role="button"
-              aria-label="Go to slide 10"
-            ></span>
-          </div>
-        </div>
-      </div>
-      <div class="bot-block">
-        <div :class="['child', { active: activeTab === 0 }]"></div>
-        <div :class="['child', { active: activeTab === 1 }]">
-          <div class="item">
-            <a>
-              <div class="img-box">
-                <img src="../../assets/images/img-4-4.jpg" alt="" />
-              </div>
-              <div class="txt-box cell-box">
-                <div class="cell">
-                  <h3 class="h3">重钢首次通过北铁中心完成混矿招标</h3>
-                  <!--<p></p>-->
-                  <span>了解详情</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="item">
-            <a>
-              <div class="img-box">
-                <img src="../../assets/images/img-4-5.jpg" alt="" />
-              </div>
-              <div class="txt-box cell-box">
-                <div class="cell">
-                  <h3 class="h3">北铁指数应用备忘录签署！产业协同迈入新阶段</h3>
-                  <span>了解详情</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="item">
-            <a>
-              <div class="img-box">
-                <img src="../../assets/images/img-4-6.jpg" alt="" />
-              </div>
-              <div class="txt-box cell-box">
-                <div class="cell">
-                  <!-- <div class="date">03</div>
-                  <div class="month">2025/11</div> -->
-                  <h3 class="h3">北铁中心拜访日韩地区行业企业</h3>
-                  <!--<p></p>-->
-                  <span>了解详情</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="index-s3">
       <div class="index-tit white">
         <h3>会员展示</h3>
@@ -4496,6 +4150,352 @@
                 aria-label="Go to slide 56"
               ></span>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index-s4">
+      <div class="top-block">
+        <div class="index-tit gray">
+          <h3>新闻与公告</h3>
+        </div>
+        <div class="tab-tit">
+          <span class="active" data-url="/tongzhi.html" @click="switchTab(0)"
+            >通知公告</span
+          >
+          <span @click="switchTab(1)">公司动态</span>
+        </div>
+        <a href="#/news" class="more">更多新闻</a>
+      </div>
+      <div class="mid-block">
+        <div :class="['child', { active: activeTab === 0 }]">
+          <div ref="swiperContainer1" class="items swiper-container">
+            <div class="swiper-wrapper">
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    关于增加浮动定价指数及调整相关公式的公告
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    关于发布北铁指数的公告
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    关于暂停发布人民币62%基准价的公告
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    关于更正麦克粉成交价格的公告
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    关于调整交易标的的公告
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    关于暂停发布曹妃甸指数的公告
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    关于会员信息变更的公告
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    关于会员信息变更的公告
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+          <div
+            class="pagination swiper-pagination-clickable swiper-pagination-bullets"
+          >
+            <span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 1"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 2"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 3"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 4"
+            ></span
+            ><span
+              class="default active"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 5"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 6"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 7"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 8"
+            ></span>
+          </div>
+        </div>
+        <div :class="['child', { active: activeTab === 1 }]">
+          <div ref="swiperContainer2" class="items swiper-container">
+            <div class="swiper-wrapper">
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    重钢首次通过北铁中心完成混矿招标
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    北铁指数应用备忘录签署！产业协同迈入新阶段
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    北铁中心拜访日韩地区行业企业
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    浦项国际（北京）到访北京铁矿石交易中心
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    北京铁矿石交易中心发布铁矿石港口现货价格指数
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    中物联大宗商品流通分会调研组到访北铁中心
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    建龙集团副总裁赵忻一行到访北铁中心
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    北铁中心召开年度股东大会暨董事会会议
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    鞍钢集团国际经济贸易有限公司总经理张永帅一行到访北铁中心
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+              <div class="item swiper-slide">
+                <a>
+                  <h3 data-swiper-parallax="-100%" class="h3">
+                    北铁中心拜访厦门地区行业企业
+                  </h3>
+                  <span data-swiper-parallax="-100%">了解详情</span>
+                </a>
+              </div>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+          <div
+            class="pagination swiper-pagination-clickable swiper-pagination-bullets"
+          >
+            <span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 1"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 2"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 3"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 4"
+            ></span
+            ><span
+              class="default active"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 5"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 6"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 7"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 8"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 9"
+            ></span
+            ><span
+              class="default"
+              tabindex="0"
+              role="button"
+              aria-label="Go to slide 10"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="bot-block">
+        <div :class="['child', { active: activeTab === 0 }]"></div>
+        <div :class="['child', { active: activeTab === 1 }]">
+          <div class="item">
+            <a>
+              <div class="img-box">
+                <img src="../../assets/images/img-4-4.jpg" alt="" />
+              </div>
+              <div class="txt-box cell-box">
+                <div class="cell">
+                  <h3 class="h3">重钢首次通过北铁中心完成混矿招标</h3>
+                  <!--<p></p>-->
+                  <span>了解详情</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a>
+              <div class="img-box">
+                <img src="../../assets/images/img-4-5.jpg" alt="" />
+              </div>
+              <div class="txt-box cell-box">
+                <div class="cell">
+                  <h3 class="h3">北铁指数应用备忘录签署！产业协同迈入新阶段</h3>
+                  <span>了解详情</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a>
+              <div class="img-box">
+                <img src="../../assets/images/img-4-5.jpg" alt="" />
+              </div>
+              <div class="txt-box cell-box">
+                <div class="cell">
+                  <!-- <div class="date">03</div>
+                  <div class="month">2025/11</div> -->
+                  <h3 class="h3">北铁中心拜访日韩地区行业企业</h3>
+                  <!--<p></p>-->
+                  <span>了解详情</span>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
