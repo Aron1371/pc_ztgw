@@ -6,7 +6,7 @@
           v-show="activeTab === 0"
           src="https://www.corex.cc//uploads/images/2021/0319/WQmVieWnjsMqB1fe21Fua5S7LKHGCdy4ImePQXjk.jpg"
           alt=""
-        />
+        /> 
         <img
           v-show="activeTab === 1"
           src="https://www.corex.cc//uploads/images/2021/0319/3kM3raquphMOXU2vqnJfCMDvA0DY9dcJqnkmBWvb.jpg"

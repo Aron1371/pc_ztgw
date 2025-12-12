@@ -9,7 +9,7 @@
     <a href="/" class="logo">
       <img src="./assets/images/logo-1.png" alt="" class="show" />
       <img src="./assets/images/logo-2.png" alt="" class="hide" />
-    </a>
+    </a> 
     <div class="main">
       <ul class="nav" :class="{ active: isNavOpen }">
         <li class="active">

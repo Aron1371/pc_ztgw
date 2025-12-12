@@ -3,7 +3,7 @@
     <div class="index-s1">
       <div
         class="items swiper-container swiper-container-initialized swiper-container-horizontal"
-      >
+      > 
         <div class="swiper-wrapper">
           <div
             class="item swiper-slide swiper-slide-active"

@@ -11,7 +11,7 @@
           <div class="mask-text">{{ timeoutTip }}</div>
         </template>
       </div>
-    </div>
+    </div> 
 
     <div v-if="isMobile()" class="nav-container">
       <img src="../../assets/images/back.png" @click="navigatorBack()" />
