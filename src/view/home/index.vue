@@ -3,7 +3,7 @@
     <div class="index-s1">
       <div
         class="items swiper-container swiper-container-initialized swiper-container-horizontal"
-      > 
+      >
         <div class="swiper-wrapper">
           <div
             class="item swiper-slide swiper-slide-active"
@@ -70,6 +70,441 @@
       <div class="scroll">
         <span>scroll</span>
         <i></i>
+      </div>
+    </div>
+    <div class="index-s2">
+      <div class="data-info">
+        <div class="item">
+          <h3 class="h3">会员数量</h3>
+          <div class="num">
+            <span class="count" ref="memberCountRef" data-target="657">0</span>
+            <i>家</i>
+          </div>
+        </div>
+        <div class="item">
+          <h3 class="h3">累计交易量</h3>
+          <div class="num">
+            <span class="count" ref="tradeCountRef" data-target="61717">0</span>
+            <i>万吨</i>
+          </div>
+        </div>
+      </div>
+      <div class="tab-wrap">
+        <div class="tab-tit">
+          <div
+            class="item"
+            :class="{ active: priceIndexTab === 0 }"
+            @click="switchPriceIndexTab(0)"
+          >
+            <span>铁矿石港口现货价格指数(61% 青岛港)</span>
+          </div>
+          <div
+            class="item"
+            :class="{ active: priceIndexTab === 1 }"
+            @click="switchPriceIndexTab(1)"
+          >
+            <span>铁矿石港口现货价格指数(61% 曹妃甸港)</span>
+          </div>
+        </div>
+        <div class="tab-cont">
+          <div class="child" :class="{ active: priceIndexTab === 0 }">
+            <div class="flex">
+              <div class="left-block">
+                <div
+                  class="trend"
+                  id="trend4"
+                  _echarts_instance_="ec_1765535674181"
+                  style="
+                    -webkit-tap-highlight-color: transparent;
+                    user-select: none;
+                    position: relative;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      width: 1114px;
+                      height: 420px;
+                      padding: 0px;
+                      margin: 0px;
+                      border-width: 0px;
+                      cursor: default;
+                    "
+                  >
+                    <canvas
+                      data-zr-dom-id="zr_0"
+                      width="1114"
+                      height="420"
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 1114px;
+                        height: 420px;
+                        user-select: none;
+                        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                        padding: 0px;
+                        margin: 0px;
+                        border-width: 0px;
+                      "
+                    ></canvas>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      display: none;
+                      border-style: solid;
+                      white-space: nowrap;
+                      z-index: 9999999;
+                      transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+                        top 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+                      background-color: rgba(50, 50, 50, 0.7);
+                      border-width: 0px;
+                      border-color: rgb(51, 51, 51);
+                      border-radius: 4px;
+                      color: rgb(255, 255, 255);
+                      font: 14px / 21px 'Microsoft YaHei';
+                      padding: 5px;
+                      left: 910px;
+                      top: 61px;
+                      pointer-events: none;
+                    "
+                  >
+                    2025-12-04<br /><span
+                      style="
+                        display: inline-block;
+                        margin-right: 5px;
+                        border-radius: 10px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #8e2623;
+                      "
+                    ></span
+                    >792
+                  </div>
+                </div>
+              </div>
+              <div class="right-block">
+                <div class="title">
+                  <!-- <h3 class="h3">基准价</h3> -->
+                  <div class="info">
+                    <!-- <span class="date table-date">2025.12.12</span> -->
+                    <!-- <span>单位：元/湿吨</span> -->
+                    <!-- <span>基港：青岛</span> -->
+                  </div>
+                </div>
+                <div class="table" id="table4">
+                  <div class="top">
+                    <!-- <span>标准品</span> -->
+                    <span style="flex: 2" id="table4-date">2025-12-12</span>
+                    <span>涨跌</span>
+                    <span>月均</span>
+                  </div>
+                  <div class="bot">
+                    <ul>
+                      <li class="t0">
+                        <span
+                          ><i style="color: #8e2623">指数</i
+                          ><em
+                            style="
+                              display: block;
+                              font-size: 12px;
+                              font-style: normal;
+                            "
+                            >（元/湿吨）</em
+                          ></span
+                        >
+                        <span class="table4-v11">779.00</span>
+                        <span class="table4-v12">0.00</span>
+                        <span class="table4-v13">787.50</span>
+                      </li>
+                      <li class="t1">
+                        <span
+                          ><i style="color: #e47e30">干吨折算价</i
+                          ><em
+                            style="
+                              display: block;
+                              font-size: 12px;
+                              font-style: normal;
+                            "
+                            >（元/干吨）</em
+                          ></span
+                        >
+                        <span class="table4-v21">851.37</span>
+                        <span class="table4-v22">0.00</span>
+                        <span class="table4-v23">860.66</span>
+                      </li>
+                      <li class="t2">
+                        <span
+                          ><i style="color: #2f3e51">美元折算价</i
+                          ><em
+                            style="
+                              display: block;
+                              font-size: 12px;
+                              font-style: normal;
+                            "
+                            >（美元/干吨）</em
+                          ></span
+                        >
+                        <span class="table4-v31">102.95</span>
+                        <span class="table4-v32">0.03</span>
+                        <span class="table4-v33">103.97</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="child" :class="{ active: priceIndexTab === 1 }">
+            <div class="flex">
+              <div class="left-block">
+                <div
+                  class="trend"
+                  id="trend1"
+                  _echarts_instance_="ec_1765535674179"
+                  style="
+                    -webkit-tap-highlight-color: transparent;
+                    user-select: none;
+                    position: relative;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      width: 1114px;
+                      height: 420px;
+                      padding: 0px;
+                      margin: 0px;
+                      border-width: 0px;
+                      cursor: default;
+                    "
+                  >
+                    <canvas
+                      data-zr-dom-id="zr_0"
+                      width="1114"
+                      height="420"
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 1114px;
+                        height: 420px;
+                        user-select: none;
+                        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                        padding: 0px;
+                        margin: 0px;
+                        border-width: 0px;
+                      "
+                    ></canvas>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      display: none;
+                      border-style: solid;
+                      white-space: nowrap;
+                      z-index: 9999999;
+                      transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+                        top 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+                      background-color: rgba(50, 50, 50, 0.7);
+                      border-width: 0px;
+                      border-color: rgb(51, 51, 51);
+                      border-radius: 4px;
+                      color: rgb(255, 255, 255);
+                      font: 14px / 21px 'Microsoft YaHei';
+                      padding: 5px;
+                      left: 999px;
+                      top: 85px;
+                      pointer-events: none;
+                    "
+                  >
+                    2025-12-11<br /><span
+                      style="
+                        display: inline-block;
+                        margin-right: 5px;
+                        border-radius: 10px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #8e2623;
+                      "
+                    ></span
+                    >792
+                  </div>
+                </div>
+              </div>
+              <div class="right-block">
+                <div class="title">
+                  <!-- <h3 class="h3">基准价</h3> -->
+                  <div class="info">
+                    <!-- <span class="date table-date">2025.12.12</span> -->
+                    <!-- <span>单位：美元/干吨</span> -->
+                    <!-- <span>CFR 青岛</span> -->
+                  </div>
+                </div>
+                <div class="table" id="table1">
+                  <div class="top">
+                    <!-- <span>标准品</span> -->
+                    <span style="flex: 2" id="table1-date">2025-12-12</span>
+                    <span>涨跌</span>
+                    <span>月均</span>
+                  </div>
+                  <div class="bot">
+                    <ul>
+                      <li class="t0">
+                        <span
+                          ><i style="color: #8e2623">指数</i
+                          ><em
+                            style="
+                              display: block;
+                              font-size: 12px;
+                              font-style: normal;
+                            "
+                            >（元/湿吨）</em
+                          ></span
+                        >
+                        <span class="table1-v11">796.00</span>
+                        <span class="table1-v12">4.00</span>
+                        <span class="table1-v13">798.70</span>
+                      </li>
+                      <li class="t1">
+                        <span
+                          ><i style="color: #e47e30">干吨折算价</i
+                          ><em
+                            style="
+                              display: block;
+                              font-size: 12px;
+                              font-style: normal;
+                            "
+                            >（元/干吨）</em
+                          ></span
+                        >
+                        <span class="table1-v21">869.95</span>
+                        <span class="table1-v22">4.38</span>
+                        <span class="table1-v23">872.90</span>
+                      </li>
+                      <li class="t2">
+                        <span
+                          ><i style="color: #2f3e51">美元折算价</i
+                          ><em
+                            style="
+                              display: block;
+                              font-size: 12px;
+                              font-style: normal;
+                            "
+                            >（美元/干吨）</em
+                          ></span
+                        >
+                        <span class="table1-v31">104.92</span>
+                        <span class="table1-v32">0.58</span>
+                        <span class="table1-v33">105.15</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="child">
+            <div class="flex">
+              <div class="left-block">
+                <div
+                  class="trend"
+                  id="trend3"
+                  _echarts_instance_="ec_1765535674180"
+                  style="
+                    -webkit-tap-highlight-color: transparent;
+                    user-select: none;
+                    position: relative;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      width: 1114px;
+                      height: 420px;
+                      padding: 0px;
+                      margin: 0px;
+                      border-width: 0px;
+                    "
+                  >
+                    <canvas
+                      data-zr-dom-id="zr_0"
+                      width="1114"
+                      height="420"
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 1114px;
+                        height: 420px;
+                        user-select: none;
+                        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                        padding: 0px;
+                        margin: 0px;
+                        border-width: 0px;
+                      "
+                    ></canvas>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+              <!-- <div class="right-block">
+                            <h3 class="h3">曹妃甸铁矿石价格指数</h3>
+                            <div class="info-1">
+                                <span class="date table-date">2025.12.12</span>
+                                <span>单位：元/湿吨，车板价</span>
+                            </div>
+                            <div class="descs">
+                                <div class="desc">
+                                    <span>标准品</span>
+                                    <p class="table3-k1"></p>
+                                </div>
+                                <div class="desc">
+                                    <span>指数</span>
+                                    <p class="table3-v1"></p>
+                                </div>
+                                <div class="desc">
+                                    <span>涨跌</span>
+                                    <p class="table3-v2"></p>
+                                </div>
+                                <div class="desc">
+                                    <span>月均</span>
+                                    <p class="table3-v3"></p>
+                                </div>
+                            </div>
+                        </div> -->
+              <div class="right-block">
+                <div class="title">
+                  <!-- <h3 class="h3">基准价</h3> -->
+                  <div class="info">
+                    <span class="date table-date">2025-12-12</span>
+                    <span>单位：元/湿吨</span>
+                    <span>基港：曹妃甸</span>
+                  </div>
+                </div>
+                <div class="table" id="table3">
+                  <div class="top">
+                    <span>标准品</span>
+                    <span>指数</span>
+                    <span>涨跌</span>
+                    <span>月均</span>
+                  </div>
+                  <div class="bot">
+                    <ul>
+                      <li class="t0">
+                        <span><i style="color: #e47e30">62%</i>粉矿</span>
+                        <span class="table3-v1">796.00</span>
+                        <span class="table3-v2">4.00</span>
+                        <span class="table3-v3">798.70</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="index-s4">
@@ -4065,32 +4500,6 @@
         </div>
       </div>
     </div>
-    <div class="index-s5">
-      <div class="left-box cell-box">
-        <div class="cell">
-          <div class="index-tit white">
-            <h3>联系我们</h3>
-          </div>
-          <div class="info">
-            <span>北京市石景山区石景山路31号院盛景国际广场A座20层</span>
-            <span>100043</span>
-            <span>010-57712888</span>
-            <span>010-57712899</span>
-            <span>enquiry@corex.cc</span>
-            <span>https://www.corex.cc</span>
-          </div>
-        </div>
-      </div>
-      <div class="right-box">
-        <div class="map">
-          <img
-            src="../../assets/images/addr.jpg"
-            style="width: 100%; height: 100%; object-fit: cover"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -4100,6 +4509,7 @@ import "../../assets/css/swiper.min.css";
 
 const activeTab = ref(0);
 const activeMemberTab = ref(0); // 会员展示tab：0-国际会员，1-国内会员
+const priceIndexTab = ref(0); // 价格指数tab：0-青岛港，1-曹妃甸港（默认显示曹妃甸港）
 const windowWidth = ref(
   typeof window !== "undefined" ? window.innerWidth : 1920
 );
@@ -4109,12 +4519,15 @@ const mShowSwiperContainer = ref(null);
 const mShowPagination = ref(null);
 const mShowSwiperContainer2 = ref(null);
 const mShowPagination2 = ref(null);
+const memberCountRef = ref(null);
+const tradeCountRef = ref(null);
 let swiper1 = null;
 let swiper2 = null;
 let mShowSwiper = null;
 let mShowSwiper2 = null;
 let Swiper = null;
 const mapSwipers = new Map(); // 存储所有地点的swiper实例
+let countObserver = null; // 数字滚动观察器
 
 // 加载 Swiper
 const loadSwiper = async () => {
@@ -4298,6 +4711,82 @@ const switchMemberTab = (index) => {
   activeMemberTab.value = index;
 };
 
+// 切换价格指数tab
+const switchPriceIndexTab = (index) => {
+  priceIndexTab.value = index;
+};
+
+// 数字递增动画函数
+const animateNumber = (element, target, duration = 1000) => {
+  if (!element) return;
+  
+  const start = 0;
+  const startTime = performance.now();
+  const targetNum = parseInt(target, 10);
+  
+  const animate = (currentTime) => {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    
+    // 使用缓动函数（ease-out）
+    const easeOut = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(start + (targetNum - start) * easeOut);
+    
+    element.textContent = current.toLocaleString();
+    
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      element.textContent = targetNum.toLocaleString();
+    }
+  };
+  
+  requestAnimationFrame(animate);
+};
+
+// 初始化数字滚动动画
+const initCountAnimation = () => {
+  if (typeof window === "undefined" || !window.IntersectionObserver) {
+    // 如果不支持 IntersectionObserver，直接执行动画
+    if (memberCountRef.value) {
+      const target = memberCountRef.value.getAttribute("data-target");
+      animateNumber(memberCountRef.value, target);
+    }
+    if (tradeCountRef.value) {
+      const target = tradeCountRef.value.getAttribute("data-target");
+      animateNumber(tradeCountRef.value, target);
+    }
+    return;
+  }
+
+  // 创建 Intersection Observer
+  countObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.dataset.animated) {
+          const target = entry.target.getAttribute("data-target");
+          animateNumber(entry.target, target);
+          entry.target.dataset.animated = "true";
+          // 动画完成后取消观察
+          countObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.5, // 当元素50%可见时触发
+      rootMargin: "0px",
+    }
+  );
+
+  // 观察数字元素
+  if (memberCountRef.value) {
+    countObserver.observe(memberCountRef.value);
+  }
+  if (tradeCountRef.value) {
+    countObserver.observe(tradeCountRef.value);
+  }
+};
+
 // 更新窗口宽度
 const updateWindowWidth = () => {
   if (typeof window !== "undefined") {
@@ -4314,6 +4803,10 @@ onMounted(async () => {
     // console.log(111)
     window.addEventListener("resize", updateWindowWidth);
   }
+
+  // 初始化数字滚动动画
+  await nextTick();
+  initCountAnimation();
 
   await loadSwiper();
   await nextTick();
@@ -4426,12 +4919,482 @@ onMounted(async () => {
       });
     }
   }
+
+  // 初始化 echarts - trend1
+  await nextTick();
+  // 等待 DOM 完全渲染，可能需要多次 nextTick
+  await nextTick();
+  const trend1Element = document.getElementById("trend1");
+  if (trend1Element && window.echarts) {
+    // 检查元素是否有宽度和高度
+    if (trend1Element.offsetWidth === 0 || trend1Element.offsetHeight === 0) {
+      console.warn("trend1 element has no dimensions, waiting...");
+      await new Promise((resolve) => setTimeout(resolve, 100));
+    }
+    const myChart1 = window.echarts.init(trend1Element);
+    if (!myChart1) {
+      console.error("Failed to initialize echarts");
+      return;
+    }
+    myChart1.off("legendselectchanged");
+
+    const option = {
+      tooltip: {
+        trigger: "axis",
+      },
+      legend: {
+        data: ["65%粉矿"],
+        right: 60,
+      },
+      dataZoom: [
+        {
+          show: true,
+          realtime: true,
+        },
+        {
+          type: "inside",
+          realtime: true,
+        },
+      ],
+      grid: {
+        show: false,
+        top: 40,
+      },
+      xAxis: {
+        type: "category",
+        boundaryGap: false,
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: "#c0c5ca",
+          },
+        },
+        axisLabel: {
+          fontSize: 12,
+          color: "#2f3e51",
+        },
+        data: [],
+      },
+      yAxis: {
+        type: "value",
+        max: "dataMax",
+        min: "dataMin",
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: "#c0c5ca",
+          },
+        },
+        axisLabel: {
+          fontSize: 12,
+          color: "#2f3e51",
+        },
+      },
+      series: [
+        {
+          // name: "65%粉矿",
+          type: "line",
+          // smooth: true,
+          sampling: "average",
+          itemStyle: {
+            color: "#8e2623",
+          },
+          data: [],
+        },
+      ],
+    };
+
+    myChart1.on("legendselectchanged", function (params) {
+      const name = params.name;
+      const selected = params.selected;
+      const select_key = Object.keys(selected);
+      const select_value = Object.values(selected);
+      const $ = window.$ || window.jQuery;
+      if ($) {
+        if (name == "65%粉矿" && select_value[0] == false) {
+          $("#table1 li.t0").hide();
+        } else if (name == "65%粉矿" && select_value[0] == true) {
+          $("#table1 li.t0").show();
+        } else if (name == "62%粉矿" && select_value[1] == false) {
+          $("#table1 li.t1").hide();
+        } else if (name == "62%粉矿" && select_value[1] == true) {
+          $("#table1 li.t1").show();
+        } else if (name == "58%粉矿" && select_value[2] == false) {
+          $("#table1 li.t2").hide();
+        } else if (name == "58%粉矿" && select_value[2] == true) {
+          $("#table1 li.t2").show();
+        }
+      }
+    });
+
+    // 直接设置初始数据（硬编码的数据）
+    const xAxisData = [
+      "2025-09-28",
+      "2025-09-29",
+      "2025-09-30",
+      "2025-10-09",
+      "2025-10-10",
+      "2025-10-11",
+      "2025-10-13",
+      "2025-10-14",
+      "2025-10-15",
+      "2025-10-16",
+      "2025-10-17",
+      "2025-10-20",
+      "2025-10-21",
+      "2025-10-22",
+      "2025-10-23",
+      "2025-10-24",
+      "2025-10-27",
+      "2025-10-28",
+      "2025-10-29",
+      "2025-10-30",
+      "2025-10-31",
+      "2025-11-03",
+      "2025-11-04",
+      "2025-11-05",
+      "2025-11-06",
+      "2025-11-07",
+      "2025-11-10",
+      "2025-11-11",
+      "2025-11-12",
+      "2025-11-13",
+      "2025-11-14",
+      "2025-11-17",
+      "2025-11-18",
+      "2025-11-19",
+      "2025-11-20",
+      "2025-11-21",
+      "2025-11-24",
+      "2025-11-25",
+      "2025-11-26",
+      "2025-11-27",
+      "2025-11-28",
+      "2025-12-01",
+      "2025-12-02",
+      "2025-12-03",
+      "2025-12-04",
+      "2025-12-05",
+      "2025-12-08",
+      "2025-12-09",
+      "2025-12-10",
+      "2025-12-11",
+      "2025-12-12",
+    ];
+
+    // 将字符串数据转换为数字
+    const seriesData = [
+      781, 778, 774, 781, 788, 788, 793, 783, 781, 782, 783, 780, 781, 786, 785,
+      781, 796, 801, 810, 807, 805, 793, 789, 789, 790, 782, 786, 780, 787, 786,
+      780, 795, 799, 799, 798, 795, 803, 805, 804, 805, 802, 807, 809, 806, 803,
+      794, 792, 792, 796, 792, 796,
+    ];
+
+    // 更新 option 中的数据
+    option.xAxis.data = xAxisData;
+    option.series[0].data = seriesData;
+
+    myChart1.setOption(option, true); // true 表示不合并，完全替换
+
+    // 确保图表正确渲染
+    setTimeout(() => {
+      myChart1.resize();
+    }, 100);
+
+    // 异步获取数据（如果需要从服务器更新数据）
+    const $ = window.$ || window.jQuery;
+    if ($ && $.post) {
+      $.post("/asyn-request/report/cfd2.html", {
+        _token: "QgRUnr04s6bcpvDojLVSS8JFoCb98xhRt5inyy2c",
+      })
+        .done(function (data) {
+          // console.log(data.data.key)
+          if (data && data.data) {
+            $(".table-date").html(data.data.key[data.data.key.length - 1]);
+            $("#table1-date").html(data.data.date);
+            // 如果服务器返回了新数据，更新图表
+            if (data.data.key && data.data.v1) {
+              // 确保 v1 数据是数字数组
+              const serverData = data.data.v1.map((val) => Number(val));
+              myChart1.setOption({
+                xAxis: {
+                  data: data.data.key,
+                },
+                series: [
+                  {
+                    data: serverData,
+                  },
+                ],
+              });
+            }
+          }
+        })
+        .fail(function () {
+          console.warn(
+            "Failed to load chart data from server, using default data"
+          );
+        });
+
+      $.post("/asyn-request/report/cfd2-data.html", {
+        _token: "QgRUnr04s6bcpvDojLVSS8JFoCb98xhRt5inyy2c",
+      }).done(function (data) {
+        // console.log(data.data)
+        $(".table1-v11").html(data.data.v1[0]);
+        $(".table1-v12").html(data.data.v2[0]);
+        $(".table1-v13").html(data.data.v3[0]);
+        $(".table1-v21").html(data.data.v1[1]);
+        $(".table1-v22").html(data.data.v2[1]);
+        $(".table1-v23").html(data.data.v3[1]);
+        $(".table1-v31").html(data.data.v1[2]);
+        $(".table1-v32").html(data.data.v2[2]);
+        $(".table1-v33").html(data.data.v3[2]);
+      });
+    }
+  }
+
+  // 初始化 echarts - trend4
+  await nextTick();
+  await nextTick();
+  const trend4Element = document.getElementById("trend4");
+  if (trend4Element && window.echarts) {
+    // 检查元素是否有宽度和高度
+    if (trend4Element.offsetWidth === 0 || trend4Element.offsetHeight === 0) {
+      console.warn("trend4 element has no dimensions, waiting...");
+      await new Promise((resolve) => setTimeout(resolve, 100));
+    }
+    const myChart4 = window.echarts.init(trend4Element);
+    if (!myChart4) {
+      console.error("Failed to initialize echarts for trend4");
+      return;
+    }
+    myChart4.off("legendselectchanged");
+
+    const option4 = {
+      tooltip: {
+        trigger: "axis",
+      },
+      legend: {
+        data: ["65%粉矿"],
+        right: 60,
+      },
+      dataZoom: [
+        {
+          show: true,
+          realtime: true,
+        },
+        {
+          type: "inside",
+          realtime: true,
+        },
+      ],
+      grid: {
+        show: false,
+        top: 40,
+      },
+      xAxis: {
+        type: "category",
+        boundaryGap: false,
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: "#c0c5ca",
+          },
+        },
+        axisLabel: {
+          fontSize: 12,
+          color: "#2f3e51",
+        },
+        data: [],
+      },
+      yAxis: {
+        type: "value",
+        max: "dataMax",
+        min: "dataMin",
+        axisLine: {
+          show: true,
+          lineStyle: {
+            color: "#c0c5ca",
+          },
+        },
+        axisLabel: {
+          fontSize: 12,
+          color: "#2f3e51",
+        },
+      },
+      series: [
+        {
+          // name: "65%粉矿",
+          type: "line",
+          // smooth: true,
+          sampling: "average",
+          itemStyle: {
+            color: "#8e2623",
+          },
+          data: [],
+        },
+      ],
+    };
+
+    myChart4.on("legendselectchanged", function (params) {
+      const name = params.name;
+      const selected = params.selected;
+      const select_key = Object.keys(selected);
+      const select_value = Object.values(selected);
+      const $ = window.$ || window.jQuery;
+      if ($) {
+        if (name == "65%粉矿" && select_value[0] == false) {
+          $("#table4 li.t0").hide();
+        } else if (name == "65%粉矿" && select_value[0] == true) {
+          $("#table4 li.t0").show();
+        } else if (name == "62%粉矿" && select_value[1] == false) {
+          $("#table4 li.t1").hide();
+        } else if (name == "62%粉矿" && select_value[1] == true) {
+          $("#table4 li.t1").show();
+        } else if (name == "58%粉矿" && select_value[2] == false) {
+          $("#table4 li.t2").hide();
+        } else if (name == "58%粉矿" && select_value[2] == true) {
+          $("#table4 li.t2").show();
+        }
+      }
+    });
+
+    // 使用 trend1 的相同数据（稍后可以替换）
+    const xAxisData4 = [
+      "2025-09-28",
+      "2025-09-29",
+      "2025-09-30",
+      "2025-10-09",
+      "2025-10-10",
+      "2025-10-11",
+      "2025-10-13",
+      "2025-10-14",
+      "2025-10-15",
+      "2025-10-16",
+      "2025-10-17",
+      "2025-10-20",
+      "2025-10-21",
+      "2025-10-22",
+      "2025-10-23",
+      "2025-10-24",
+      "2025-10-27",
+      "2025-10-28",
+      "2025-10-29",
+      "2025-10-30",
+      "2025-10-31",
+      "2025-11-03",
+      "2025-11-04",
+      "2025-11-05",
+      "2025-11-06",
+      "2025-11-07",
+      "2025-11-10",
+      "2025-11-11",
+      "2025-11-12",
+      "2025-11-13",
+      "2025-11-14",
+      "2025-11-17",
+      "2025-11-18",
+      "2025-11-19",
+      "2025-11-20",
+      "2025-11-21",
+      "2025-11-24",
+      "2025-11-25",
+      "2025-11-26",
+      "2025-11-27",
+      "2025-11-28",
+      "2025-12-01",
+      "2025-12-02",
+      "2025-12-03",
+      "2025-12-04",
+      "2025-12-05",
+      "2025-12-08",
+      "2025-12-09",
+      "2025-12-10",
+      "2025-12-11",
+      "2025-12-12",
+    ];
+
+    // 将字符串数据转换为数字（使用 trend1 的相同数据）
+    const seriesData4 = [
+      772, 769, 765, 774, 777, 777, 784, 772, 769, 770, 770, 768, 772, 777, 777,
+      777, 787, 790, 801, 799, 797, 780, 777, 777, 782, 769, 769, 768, 777, 775,
+      777, 791, 793, 793, 793, 789, 794, 796, 797, 797, 795, 799, 799, 797, 792,
+      782, 778, 783, 787, 779, 779,
+    ];
+
+    // 更新 option 中的数据
+    option4.xAxis.data = xAxisData4;
+    option4.series[0].data = seriesData4;
+
+    myChart4.setOption(option4, true); // true 表示不合并，完全替换
+
+    // 确保图表正确渲染
+    setTimeout(() => {
+      myChart4.resize();
+    }, 100);
+
+    // 异步获取数据（如果需要从服务器更新数据）
+    const $ = window.$ || window.jQuery;
+    if ($ && $.post) {
+      // 注意：这里使用的是 trend1 的接口，稍后可以改为 trend4 的接口
+      $.post("/asyn-request/report/cfd2.html", {
+        _token: "QgRUnr04s6bcpvDojLVSS8JFoCb98xhRt5inyy2c",
+      })
+        .done(function (data) {
+          if (data && data.data) {
+            $(".table-date").html(data.data.key[data.data.key.length - 1]);
+            $("#table4-date").html(data.data.date);
+            // 如果服务器返回了新数据，更新图表
+            if (data.data.key && data.data.v1) {
+              // 确保 v1 数据是数字数组
+              const serverData = data.data.v1.map((val) => Number(val));
+              myChart4.setOption({
+                xAxis: {
+                  data: data.data.key,
+                },
+                series: [
+                  {
+                    data: serverData,
+                  },
+                ],
+              });
+            }
+          }
+        })
+        .fail(function () {
+          console.warn(
+            "Failed to load chart data from server for trend4, using default data"
+          );
+        });
+
+      $.post("/asyn-request/report/cfd2-data.html", {
+        _token: "QgRUnr04s6bcpvDojLVSS8JFoCb98xhRt5inyy2c",
+      }).done(function (data) {
+        if (data && data.data) {
+          $(".table4-v11").html(data.data.v1[0]);
+          $(".table4-v12").html(data.data.v2[0]);
+          $(".table4-v13").html(data.data.v3[0]);
+          $(".table4-v21").html(data.data.v1[1]);
+          $(".table4-v22").html(data.data.v2[1]);
+          $(".table4-v23").html(data.data.v3[1]);
+          $(".table4-v31").html(data.data.v1[2]);
+          $(".table4-v32").html(data.data.v2[2]);
+          $(".table4-v33").html(data.data.v3[2]);
+        }
+      });
+    }
+  }
 });
 
 onUnmounted(() => {
   // 移除窗口大小变化监听
   if (typeof window !== "undefined") {
     window.removeEventListener("resize", updateWindowWidth);
+  }
+  
+  // 清理数字滚动观察器
+  if (countObserver) {
+    countObserver.disconnect();
+    countObserver = null;
   }
 });
 </script>

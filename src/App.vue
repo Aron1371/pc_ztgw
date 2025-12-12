@@ -16,7 +16,7 @@
           <a href="#/" class="single">首页</a>
         </li>
         <li>
-          <a href="#/channel" class="single">联系我们</a>
+          <a href="#/channel" class="single">业务与服务</a>
         </li>
         <li>
           <a href=" #/about" class="single">关于我们</a>
